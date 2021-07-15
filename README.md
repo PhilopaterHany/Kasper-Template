@@ -7,6 +7,6 @@
   <li>Works well on all devices &amp; browser friendly.</li>
   <li>Took around 22 hours.</li>
   <li>I considered it as a practice material to apply what I have learned in HTML5 and CSS3.</li>
-  <li>You can view it live through this <a href="https://rafay-kasper-template.netlify.app/" target="_blank">link</a>.</li>
+  <li>You can view it live through this <a href="https://philopaterhany.github.io/Kasper-Template-Two/" target="_blank">link</a>.</li>
   <li>Special Thanks to <a href="https://www.youtube.com/c/ElzeroInfo" target="_blank">Osama Elzero</a>.</li>
 </ul>
