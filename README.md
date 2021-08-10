@@ -1,4 +1,4 @@
-# Kasper-Template-Two
+# Kasper - Template
 <ul>
   <li>Responsive HTML &amp; CSS Webpage !</li>
   <li>You can view the template's PSD file through this <a href="https://www.graphberry.com/item/kasper-one-page-psd-template" target="_blank">link</a>. It is <b>free</b> !</li>
