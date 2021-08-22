@@ -1,6 +1,6 @@
 # Kasper-Template
 - Responsive HTML &amp; CSS Webpage !
-- You can view the template's PSD file through this [link](https://www.graphberry.com/item/kasper-one-page-psd-template). It is free !
+- You can view the template's PSD file through this [link](https://www.graphberry.com/item/kasper-one-page-psd-template), It is free !
 - Maybe I'll add some JavaScript later.
 - Simple Website for a web developing agency.
 - Works well on all devices.
