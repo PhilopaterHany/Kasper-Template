@@ -109,16 +109,16 @@ nameHolder.onclick = () => nameInp.focus();
 emailHolder.onclick = () => emailInp.focus();
 
 const images = [
-    "url(../images/landing-00.jpg)",
-    "url(../images/landing-01.jpg)",
-    "url(../images/landing-02.jpg)",
-    "url(../images/landing-03.jpg)",
-    "url(../images/landing-04.jpg)",
-    "url(../images/landing-05.jpg)",
-    "url(../images/landing-06.jpg)",
-    "url(../images/landing-07.jpg)",
-    "url(../images/landing-08.jpg)",
-    "url(../images/landing-09.jpg)",
+    "url(images/landing-00.jpg)",
+    "url(images/landing-01.jpg)",
+    "url(images/landing-02.jpg)",
+    "url(images/landing-03.jpg)",
+    "url(images/landing-04.jpg)",
+    "url(images/landing-05.jpg)",
+    "url(images/landing-06.jpg)",
+    "url(images/landing-07.jpg)",
+    "url(images/landing-08.jpg)",
+    "url(images/landing-09.jpg)",
 ];
 document.querySelector(".landing").style.backgroundImage =
     images[Math.floor(Math.random() * images.length)];
