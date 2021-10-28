@@ -66,12 +66,13 @@ window.onscroll = () => {
         : (btn.style.right = "-1000px");
 
     // Progress Bar Fill When Appear
-    if (
-        window.scrollY >
-        skills.offsetTop + skills.offsetHeight - window.innerHeight - 200
-    ) {
+    if (window.scrollY >= skills.offsetTop - 200) {
         allSkills.forEach((skill) => {
             skill.style.width = skill.dataset.prog;
+        });
+    } else {
+        allSkills.forEach((skill) => {
+            skill.style.width = "0";
         });
     }
 
