@@ -31,7 +31,7 @@ const scrollProg = document.querySelector("header .holder");
 window.addEventListener("scroll", () => {
     if (scrollY > 25) {
         navBar.style.cssText =
-            "width: 98%;position: fixed;top: 10px;left: 50%;margin-left: -49%;background-color: var(--blackTransparent);backdrop-filter:blur(5px);";
+            "width: 98%;position: fixed;top: 10px;left: 50%;margin-left: -49%;background-color: rgba(0, 0, 0, 0.7);;backdrop-filter:blur(5px);";
     } else {
         navBar.style.cssText =
             "width: 100%;position: absolute; top: 0 !important;margin-left: unset !important;";

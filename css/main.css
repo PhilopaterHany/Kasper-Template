@@ -1,9 +1,9 @@
 /*^ Start Variables */
 :root {
-    --mainColor: rgb(25, 200, 250);
-    --transpMainColor: rgba(25, 202, 250, 0.6);
-    --transpSecColor: rgba(15, 116, 143, 0.6);
-    --blackTransparent: rgba(0, 0, 0, 0.6);
+    --mainColor: rgb(0, 199, 252);
+    --transpMainColor: rgba(0, 199, 252, 0.7);
+    --transpSecColor: rgba(15, 116, 143, 0.7);
+    --blackTransparent: rgba(0, 0, 0, 0.5);
     --white: rgb(240, 240, 240);
     --sectionPadding: 100px;
     --mainDuration: 0.5s;
@@ -295,33 +295,34 @@ header .container nav form i:hover {
     background-color: var(--blackTransparent);
 }
 .landing .land-text {
-    width: 50%;
-    padding: calc(var(--sectionPadding) / 2);
-    display: flex;
-    justify-content: flex-end;
     position: absolute;
     top: 55%;
     left: 0;
-    background-color: var(--transpSecColor);
+    width: max(700px, 60%);
     color: var(--white);
+    padding: calc(var(--sectionPadding) / 4);
+    background-color: var(--transpSecColor);
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
 }
-.landing .land-text .content {
-    max-width: 500px;
+.landing .land-text .content .content-container {
+    margin-left: auto;
+    width: 65%;
+    padding: 10px;
 }
-.landing .land-text .content h2 {
+.landing .land-text .content .content-container h1 {
     margin-bottom: 20px;
     line-height: 1.5;
-    font-size: 32px;
+    font-size: 25px;
     font-weight: normal;
+    text-transform: uppercase;
 }
-.landing .land-text .content p {
+.landing .land-text .content .content-container p {
     font-size: 14px;
-    line-height: 2;
+    line-height: 1.8;
 }
 .landing .arrows {
     width: calc(100% - 40px);
@@ -330,7 +331,7 @@ header .container nav form i:hover {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 50%;
+    top: 54%;
     left: 0;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -350,6 +351,7 @@ header .container nav form i:hover {
     }
 }
 .landing .arrows i {
+    font-size: 20px;
     cursor: pointer;
     color: var(--white);
 }
@@ -368,8 +370,8 @@ header .container nav form i:hover {
     gap: 10px;
 }
 .landing .bullets span {
-    width: 17px;
-    height: 17px;
+    width: 12px;
+    height: 12px;
     cursor: pointer;
     border: 1px solid var(--white);
     background-color: transparent;
@@ -439,9 +441,11 @@ header .container nav form i:hover {
 }
 .services .container .services-content .serv .serv-text h4 {
     margin-bottom: 20px;
+    font-weight: 300;
     color: var(--mainColor);
 }
 .services .container .services-content .serv .serv-text p {
+    font-weight: 300;
     line-height: 1.8;
 }
 /** End Services */
@@ -473,7 +477,7 @@ header .container nav form i:hover {
 }
 .design .image img {
     position: relative;
-    bottom: -70px;
+    bottom: -145px;
     transition: var(--mainDuration);
     -webkit-transition: var(--mainDuration);
     -moz-transition: var(--mainDuration);
@@ -553,7 +557,6 @@ header .container nav form i:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-inline: 10px;
     padding: 10px;
     list-style: none;
     background-color: var(--white);
@@ -582,6 +585,24 @@ header .container nav form i:hover {
     overflow: hidden;
     border: 2px solid var(--mainColor);
 }
+.portfolio .imgprev .box::before {
+    content: "";
+    position: absolute;
+    top: -1000px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: var(--blackTransparent);
+    transition: calc(var(--mainDuration) / 2);
+    -webkit-transition: calc(var(--mainDuration) / 2);
+    -moz-transition: calc(var(--mainDuration) / 2);
+    -ms-transition: calc(var(--mainDuration) / 2);
+    -o-transition: calc(var(--mainDuration) / 2);
+}
+.portfolio .imgprev .box:hover::before {
+    top: 0 !important;
+}
 @media (min-width: 768px) {
     .portfolio .imgprev .box {
         flex-basis: 50%;
@@ -592,16 +613,6 @@ header .container nav form i:hover {
         flex-basis: 25%;
     }
 }
-.portfolio .imgprev .box:hover img {
-    transform: rotate(2deg) scale(1.1);
-    -webkit-transform: rotate(2deg) scale(1.1);
-    -moz-transform: rotate(2deg) scale(1.1);
-    -ms-transform: rotate(2deg) scale(1.1);
-    -o-transform: rotate(2deg) scale(1.1);
-}
-.portfolio .imgprev .box:hover .caption {
-    bottom: 0;
-}
 .portfolio .imgprev .box img {
     width: 100%;
     height: 100%;
@@ -611,12 +622,20 @@ header .container nav form i:hover {
     -ms-transition: var(--mainDuration);
     -o-transition: var(--mainDuration);
 }
+.portfolio .imgprev .box:hover img {
+    transform: rotate(2deg) scale(1.1);
+    -webkit-transform: rotate(2deg) scale(1.1);
+    -moz-transform: rotate(2deg) scale(1.1);
+    -ms-transform: rotate(2deg) scale(1.1);
+    -o-transform: rotate(2deg) scale(1.1);
+}
 .portfolio .imgprev .box .caption {
     width: 100%;
     padding: 20px;
     position: absolute;
     bottom: -100%;
     left: 0;
+    z-index: 3;
     background-color: var(--white);
     transition: calc(var(--mainDuration) / 2);
     -webkit-transition: calc(var(--mainDuration) / 2);
@@ -624,13 +643,16 @@ header .container nav form i:hover {
     -ms-transition: calc(var(--mainDuration) / 2);
     -o-transition: calc(var(--mainDuration) / 2);
 }
+.portfolio .imgprev .box:hover .caption {
+    text-align: center;
+    bottom: 0;
+}
 .portfolio .imgprev .box .caption h4 {
     margin-bottom: 10px;
     font-size: 18px;
 }
 .portfolio .imgprev .box .caption p {
     color: var(--mainColor);
-    font-weight: bold;
 }
 .portfolio a.more {
     display: block;
@@ -662,12 +684,12 @@ header .container nav form i:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     background-color: var(--blackTransparent);
 }
+.video::before,
 .video video {
     width: 100%;
+    height: 100%;
 }
 .video .text {
     width: 100%;
@@ -727,6 +749,9 @@ header .container nav form i:hover {
     padding-top: var(--sectionPadding);
     text-align: center;
     overflow: hidden;
+}
+.about .heading p {
+    margin-bottom: -40px;
 }
 .about img {
     position: relative;
