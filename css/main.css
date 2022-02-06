@@ -360,7 +360,7 @@ header .container nav form i:hover {
 .landing .bullets {
     position: absolute;
     bottom: 30px;
-    width: calc(100% - 40px);
+    width: calc(100% - 5px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -473,7 +473,7 @@ header .container nav form i:hover {
 }
 .design .image img {
     position: relative;
-    bottom: -120px;
+    bottom: -70px;
     transition: var(--mainDuration);
     -webkit-transition: var(--mainDuration);
     -moz-transition: var(--mainDuration);
@@ -1125,6 +1125,7 @@ header .container nav form i:hover {
     font-size: 20px;
     font-weight: bold;
     text-transform: capitalize;
+    text-align: center;
 }
 .pricing .container .spec a {
     padding: 15px 20px;
