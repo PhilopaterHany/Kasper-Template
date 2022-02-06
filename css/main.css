@@ -1052,7 +1052,7 @@ header .container nav form i:hover {
     -ms-transition: calc(var(--mainDuration) * 2);
     -o-transition: calc(var(--mainDuration) * 2);
 }
-.pricing .container .plans .price .head h3 {
+.pricing .container .plans .price .head h4 {
     margin-bottom: 20px;
     font-weight: normal;
     text-transform: uppercase;
