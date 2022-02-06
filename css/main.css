@@ -437,7 +437,7 @@ header .container nav form i:hover {
 .services .container .services-content .serv .serv-icon i:hover {
     color: var(--mainColor);
 }
-.services .container .services-content .serv .serv-text h3 {
+.services .container .services-content .serv .serv-text h4 {
     margin-bottom: 20px;
     color: var(--mainColor);
 }
