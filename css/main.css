@@ -605,7 +605,7 @@ header .container nav form i:hover {
     bottom: 0;
 }
 .portfolio .imgprev .box img {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     transition: var(--mainDuration);
     -webkit-transition: var(--mainDuration);
