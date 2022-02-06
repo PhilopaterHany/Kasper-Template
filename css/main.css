@@ -854,14 +854,14 @@ header .container nav form i:hover {
     text-align: center;
 }
 .feats .container .testimonials .main-content .box {
-    margin-bottom: 35px;
+    margin-bottom: 55px;
     display: flex;
     align-items: center;
 }
 .feats .container .testimonials .main-content .box img {
     margin: 0 35px 15px 0;
-    width: 85px;
-    height: 85px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -870,11 +870,12 @@ header .container nav form i:hover {
 }
 @media (max-width: 767px) {
     .feats .container .testimonials .main-content .box {
+        margin-bottom: 100px;
         flex-direction: column;
         text-align: center;
     }
     .feats .container .testimonials .main-content .box img {
-        margin: 0 auto 20px auto;
+        margin: 0 auto 10px;
     }
 }
 .feats .container .testimonials .text {
@@ -919,7 +920,7 @@ header .container nav form i:hover {
     background-color: var(--transpMainColor);
 }
 .feats .container .skills .main-prog {
-    margin-block: 64.5px;
+    margin-block: 50px;
 }
 .feats .container .skills .main-prog h5 {
     margin-bottom: 5px;
