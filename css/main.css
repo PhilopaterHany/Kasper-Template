@@ -313,14 +313,6 @@ header .container nav form i:hover {
 .landing .land-text .content {
     max-width: 500px;
 }
-@media (max-width: 767px) {
-    .landing .land-text {
-        width: 100%;
-    }
-    .landing .land-text .content {
-        max-width: 100%;
-    }
-}
 .landing .land-text .content h2 {
     margin-bottom: 20px;
     line-height: 1.5;
@@ -347,6 +339,12 @@ header .container nav form i:hover {
     -o-transform: translateY(-50%);
 }
 @media (max-width: 767px) {
+    .landing .land-text {
+        width: 100%;
+    }
+    .landing .land-text .content {
+        max-width: 100%;
+    }
     .landing .arrows {
         display: none;
     }
@@ -997,11 +995,6 @@ header .container nav form i:hover {
     font-size: 30px;
     font-weight: bold;
 }
-@media (max-width: 767px) {
-    .quote .container q {
-        font-size: 22px;
-    }
-}
 .quote .container q::before,
 .quote .container q::after {
     position: relative;
@@ -1018,6 +1011,9 @@ header .container nav form i:hover {
     right: -5px;
 }
 @media (max-width: 767px) {
+    .quote .container q {
+        font-size: 22px;
+    }
     .quote .container q::before,
     .quote .container q::after {
         font-size: 12px;
@@ -1236,11 +1232,6 @@ header .container nav form i:hover {
     display: flex;
     justify-content: space-between;
 }
-@media (max-width: 767px) {
-    .contact .container .content {
-        flex-direction: column;
-    }
-}
 .contact .container .content form {
     flex-basis: 67.5%;
 }
@@ -1302,21 +1293,8 @@ header .container nav form i:hover {
 .contact .container .content form input[type="submit"]:hover {
     border-color: var(--transpSecColor);
 }
-@media (max-width: 767px) {
-    .contact .container .content form input[type="submit"] {
-        margin: 0 auto;
-    }
-}
 .contact .container .content .text {
     flex-basis: 27.5%;
-}
-@media (max-width: 767px) {
-    .contact .container .content .text {
-        order: -1;
-        text-align: center;
-        display: flex;
-        justify-content: space-evenly;
-    }
 }
 .contact .container .content .text h4 {
     width: fit-content;
@@ -1336,16 +1314,26 @@ header .container nav form i:hover {
 .contact .container .content .text .location h4 {
     margin-top: 75px;
 }
-@media (max-width: 767px) {
-    .contact .container .content .text .location h4 {
-        margin-top: unset;
-        margin-left: 10px;
-    }
-}
 .contact .container .content .text .location address {
     color: #777;
 }
 @media (max-width: 767px) {
+    .contact .container .content {
+        flex-direction: column;
+    }
+    .contact .container .content form input[type="submit"] {
+        margin: 0 auto;
+    }
+    .contact .container .content .text {
+        order: -1;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .contact .container .content .text .location h4 {
+        margin-top: unset;
+        margin-left: 10px;
+    }
     .contact .container .content .text .location address {
         margin-bottom: 30px;
     }
