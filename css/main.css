@@ -346,6 +346,9 @@ header .container nav form i:hover {
     .landing .land-text .content {
         max-width: 100%;
     }
+    .landing .land-text .content .content-container {
+        width: 100%;
+    }
     .landing .arrows {
         display: none;
     }
