@@ -276,3 +276,6 @@ btn.onclick = () => {
         behavior: "smooth",
     });
 };
+
+// Putting Year at Footer
+document.querySelector("footer .year").innerHTML = new Date().getFullYear();
